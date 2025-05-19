@@ -25,14 +25,17 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2vh;
-    margin-left: 5vh;
+    padding: 2%;
+    justify-content: space-between;
+    width: 98%;
 
 }
+
 ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 li {
@@ -41,7 +44,11 @@ li {
     align-items: center;
     margin-left: 5vh;
     margin-right: 2vh;
-    width: 100%;
+
+}
+
+li:hover {
+    text-shadow: 3px 3px 3px rgb(121, 121, 121);
 }
 
 .welcome {
@@ -54,80 +61,78 @@ li {
     padding: 2vh;
 }
 
-.tarjetas {
-    display: grid;
-    grid-template-areas: "tarjeta-1" "tarjeta-2" "tarjeta-3";
-    grid-template-columns: 30% 30% 30%;
-    justify-content: center;
-}
-
-.tarjeta-1 {
-    display: grid;
-    grid-template-areas: "señora" "subtitulo" "parrafo" ;
-    grid-template-rows: 50% 10% 40%;
-    box-sizing: content-box;
-    border: 1px solid black;
-    margin: 5%;
-}
-
-.tarjeta-2 {
-    display: grid;
-    grid-template-areas: "señora" "subtitulo" "parrafo" ;
-    grid-template-rows: 50% 10% 40%;
-    box-sizing: content-box;
-    border: 1px solid black;
-    margin: 5%;
-}
-
-.tarjeta-3 {
-    display: grid;
-    grid-template-areas: "señora" "subtitulo" "parrafo" ;
-    grid-template-rows: 50% 10% 40%;
-    box-sizing: content-box;
-    border: 1px solid black;
-    margin: 5%;
-}
-
-.señora {
-    align-self: center;
-    margin: 3%;
-}
-
-.subtitulo {
-    align-self: center;
-    margin: 3%;
-}
-
-.parrafo {
-    align-self: center;
-    margin: 3%;
-}
-
-h3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5%;
-    padding: 2vh;
-}
 
 .mv {
     display: grid;
     grid-template-areas: "mision" "vision";
-    border: 1px solid black;
     grid-template-columns: 50% 50%;
-    margin: 10%;
-    padding: 5%;
+    margin: 2%;
+    padding: 2vh;
     text-align: justify;
     height: 100%;
     justify-content: center;
     align-items: center;
+    gap: 10vh;
+    width: 60%
+}
+
+.abutu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.recuadro {
+    display: flex;
+    flex-direction: column;
+    margin: 2vh
+}
+
+.recuadro h3 {
+    text-align: center;
+}
+
+.recuadro img {
+    align-self: center;
+    width: 60%;
 }
 
 .contacto {
     display: grid;
-    grid-template-areas: "mapa" "lista";
+    grid-template-areas: "mapa lista" "mapa barra";
     grid-template-columns: 60% 40%;
+    grid-template-rows: 90% 10%;
+    width: 80%;
+}
+
+.mapa {
+    grid-area: mapa;
+    align-self: center;
+    width: 100%;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: lista;
+    text-align: center;
+}
+#casita{list-style-image: url("./IMG/casa.jpg");}
+
+#correo{list-style-image: url(./IMG/correo.png);}
+
+
+
+
+
+
+.barrita {
+    grid-area: barra;
+    height: 12px;
+    background: linear-gradient(to right, aqua, blue);
 }
 
 .lista-contacto {
@@ -136,4 +141,52 @@ h3 {
     align-items: center;
     justify-content: center;
 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-tarjeta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.tarjetas {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    height: max-content;
+    margin: 10vh;
+}
+
+.tarjeta {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    text-align: center;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    word-break: normal;
+    overflow-wrap: break-word;
+    box-shadow: 3px 3px 5px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 20vh;
+}
+
+.tarjeta p,
+.tarjeta h2 {
+    padding: 1vh;
+    font-size: 1rem;
+}
+
+footer {
+    height: 20%;
 }
